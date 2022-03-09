@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Montserrat;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+}
+
+h3 {
+	text-align: center;
+	font-family: Rowdies;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 79px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	/* Redberry Red */
+
+	color: #FE3B1F;
+}
+
+.form {
+	display: flex;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.form.active {
+	display: flex;
+}
+
+.form>div {
+	height: 100%;
+	width: 50%;
+	/*float: left;*/
+	color: #ffffff;
+	padding: 5%;
+	text-align: center;
+}
+
+.inputs {
+	background: white;
+}
+
+.inputs input,
+select {
+	/*position: absolute;*/
+	width: 455px;
+	height: 54px;
+	margin: 10px auto;
+	/*left: 235px;*/
+	/*top: 390px;*/
+	padding: 10px;
+	background: #FFFFFF;
+	display: block;
+	border: 1px solid #525557;
+	box-sizing: border-box;
+}
+
+.q-title,
+label {
+	color: #000;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.q-title {
+	font-weight: bold;
+}
+
+.group {
+	padding: 30px;
+	text-align: left;
+}
+
+.group>input[type="radio"] {
+	padding: unset;
+	width: unset;
+	height: unset;
+	display: inline;
+}
+
+.group textarea {
+	padding: 20px 10px;
+	width: 535px;
+	resize: none;
+}
+
+.group input {
+
+	margin: 10px 10px;
+}
+
+
+.description {
+	background: radial-gradient(50% 50% at 50% 50%, #0C0D0E 0%, #151718 73.44%);
+	font-size: 24px;
+	line-height: 200%;
+	letter-spacing: 0.05em;
+	text-align: center;
+	font-family: Montserrat;
+	text-align: center;
+}
+
+.inputs .add-prg-lan {
+	width: 201px;
+	height: 32px;
+	background: #FE3B1F;
+	color: #ffffff;
+}
+
+.paging {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	height: 50px;
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.page-indicator {
+	height: 50px;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 10%;
+	/*left: 5%;*/
+	z-index: 5;
+	/*background: red;*/
+}
+
+em,
+.paging button {
+	display: block;
+	color: white;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #FE3B1F;
+	opacity: 0.2;
+	margin: 0 15px;
+	z-index: 7;
+}
+
+em.cur-page {
+	opacity: 1;
+}
